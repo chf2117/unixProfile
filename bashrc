@@ -1,3 +1,7 @@
+export TERM=xterm-color
+export PS1='\e[33;1m\u@\h: \e[31m\W\e[0m\$ '
+export LS_OPTS='--color=auto'
+export CLICOLOR=true
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -115,3 +119,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export LS_COLORS='rs=0:di=01;94:ln=01;36:mh=00:pi=40;33'
